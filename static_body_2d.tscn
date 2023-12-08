@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1q28rxl2bio2"]
+
+[ext_resource type="Texture2D" uid="uid://cfautd216t475" path="res://assets/Plataforma Assets/bloco.png" id="1_o7eb4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxu51"]
+size = Vector2(16, 16)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 65535
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cxu51")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("1_o7eb4")

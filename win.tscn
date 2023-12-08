@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqvbqx6hf8cpe"]
+
+[ext_resource type="Texture2D" uid="uid://by25uguj1cu07" path="res://assets/Plataforma Assets/TheEnd.png" id="1_22cn3"]
+
+[node name="win" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -32.0
+offset_right = 1120.0
+offset_bottom = 640.0
+color = Color(0.384314, 0.615686, 0.917647, 1)
+
+[node name="TheEnd" type="Sprite2D" parent="."]
+position = Vector2(539, 313)
+scale = Vector2(5.74757, 5.35714)
+texture = ExtResource("1_22cn3")

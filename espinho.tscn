@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://t50p8qyw8s1e"]
+
+[ext_resource type="Texture2D" uid="uid://blwnd4qmqlu2d" path="res://assets/Plataforma Assets/espinho.png" id="1_jovhf"]
+[ext_resource type="Script" path="res://espinho.gd" id="1_s1don"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jw410"]
+size = Vector2(12, 4)
+
+[node name="espinho" type="Area2D"]
+script = ExtResource("1_s1don")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jovhf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_jw410")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

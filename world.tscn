@@ -1,0 +1,120 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmnabmam4h3uq"]
+
+[ext_resource type="PackedScene" uid="uid://c1q28rxl2bio2" path="res://static_body_2d.tscn" id="1_nt6qs"]
+[ext_resource type="PackedScene" uid="uid://bnqiwursbr16n" path="res://player.tscn" id="2_2uusx"]
+[ext_resource type="PackedScene" uid="uid://c4xosc2g7qstl" path="res://coracao.tscn" id="3_svfdp"]
+[ext_resource type="PackedScene" uid="uid://t50p8qyw8s1e" path="res://espinho.tscn" id="3_uxxua"]
+
+[node name="world" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.384314, 0.615686, 0.917647, 1)
+
+[node name="Blocks" type="Node2D" parent="."]
+position = Vector2(0, -24)
+
+[node name="StaticBody2D" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(32, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D2" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(96, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D3" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(160, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D4" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(224, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D5" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(288, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D6" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(352, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D7" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(416, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D8" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(480, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D9" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(544, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D10" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(608, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D11" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(672, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D12" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(736, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D13" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(800, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D14" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(864, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D15" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(928, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D16" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(992, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D17" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(1056, 640)
+scale = Vector2(4, 4)
+
+[node name="StaticBody2D18" parent="Blocks" instance=ExtResource("1_nt6qs")]
+position = Vector2(1120, 640)
+scale = Vector2(4, 4)
+
+[node name="player" parent="Blocks" instance=ExtResource("2_2uusx")]
+position = Vector2(48, 344)
+scale = Vector2(4, 4)
+
+[node name="espinho" parent="." instance=ExtResource("3_uxxua")]
+position = Vector2(192, 552)
+scale = Vector2(4, 4)
+
+[node name="espinho2" parent="." instance=ExtResource("3_uxxua")]
+position = Vector2(352, 552)
+scale = Vector2(4, 4)
+
+[node name="espinho3" parent="." instance=ExtResource("3_uxxua")]
+position = Vector2(544, 552)
+scale = Vector2(4, 4)
+
+[node name="espinho4" parent="." instance=ExtResource("3_uxxua")]
+position = Vector2(736, 552)
+scale = Vector2(4, 4)
+
+[node name="espinho5" parent="." instance=ExtResource("3_uxxua")]
+position = Vector2(544, 536)
+scale = Vector2(4, 4)
+
+[node name="espinho6" parent="." instance=ExtResource("3_uxxua")]
+position = Vector2(928, 552)
+scale = Vector2(4, 4)
+
+[node name="coracao" parent="." instance=ExtResource("3_svfdp")]
+position = Vector2(1088, 560)
+scale = Vector2(4, 4)
